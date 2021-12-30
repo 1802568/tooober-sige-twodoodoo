@@ -13,7 +13,10 @@ class Box {
  
     World.add(world, this.body);
   }
-  display(){
+ 
+    console.log(this.body.speed);
+    if((this.body.speed)<13){
+      display(){
     var pos =this.body.position;
     var angle = this.body.angle;
     push();
@@ -24,14 +27,11 @@ class Box {
     stroke("black");
     fill("red");
     rect(0, 0, this.width, this.height);
-    pop();
-    console.log(this.body.speed);
-    if((this.body.speed)<13){
-      this.display
+    pop();}
     }
     else{
-      World.remove(this.body)
+      World.remove(world,this.body)
     }
-  }
+  
 
 }
