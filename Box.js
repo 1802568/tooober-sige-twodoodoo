@@ -15,7 +15,7 @@ class Box {
   }
  
     console.log(this.body.speed);
-    if((this.body.speed)<13){
+    if((this.body.speed)<1){
       display(){
     var pos =this.body.position;
     var angle = this.body.angle;
